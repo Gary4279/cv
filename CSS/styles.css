@@ -38,16 +38,29 @@ p{
   font-weight: bold;
 }
 
-#white-section{
-  background-color: #fff;
-  color: #000;
+section {
   padding-top: 56px;
+  padding-bottom: 4rem;
 }
 
-#black-section{
+#white-profile{
+  background-color: #fff;
+  color: #000;
+}
+
+#black-skills{
   background-color: #000;
   color: #fff;
-  padding-top: 56px;
+}
+
+#white-projects{
+  background-color: #fff;
+  color: #000;
+}
+
+#black-contact{
+  background-color: #000;
+  color: #fff;
 }
 
 .navbar-brand {
@@ -147,6 +160,7 @@ margin-bottom: 80px;
   line-height: 2;
   margin: 100px auto 100px auto;
   text-align: left;
+  height: auto;
 }
 /* This below makes it so there isn't any wrapping of the text on the image and the text appears below the image. please refer to paragraph class for HTML element.
 .programing-description{
