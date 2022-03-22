@@ -39,26 +39,51 @@ p{
 }
 
 section {
-  padding-top: 56px;
   padding-bottom: 4rem;
 }
 
 #white-profile{
+  padding-top: 15%;
+
   background-color: #fff;
   color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro {
+}
+.profile-picture {
+  border-radius: 100%;
 }
 
 #black-skills{
+  padding-top: 56px;
   background-color: #000;
   color: #fff;
 }
 
 #white-projects{
+  padding-top: 56px;
   background-color: #fff;
   color: #000;
 }
+.works-box {
+  padding: 0 35%;
+}
+
+.furnsite-image {
+  width: 19%;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.furnsite-image:hover{
+  opacity: .5;
+}
 
 #black-contact{
+  padding-top: 56px;
   background-color: #000;
   color: #fff;
 }
@@ -72,7 +97,7 @@ section {
   padding: 0 18px;
 }
 
-.btn {
+/* .btn {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #6ccccc);
   background-image: -moz-linear-gradient(top, #3498db, #6ccccc);
@@ -87,9 +112,9 @@ section {
   font-size: 20px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -97,14 +122,13 @@ section {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
+} */
 
 .contact-me{
-  margin-top: 40px;
+
 }
 .copyright{
   color: #EAF6F6;
-  font-weight: normal;
 }
 
 .hello-description{
@@ -129,9 +153,8 @@ margin-bottom: 80px;
 }
 
 .footer {
-  line-height: 3;
-  margin: 40px auto 0 auto;
-  padding: 2rem 0 2rem 0;
+  line-height: 1.5;
+  padding-top: 20px;
 }
 
 .pro {

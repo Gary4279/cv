@@ -11,6 +11,7 @@
 
   <!-- Bootstrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="JS/Resume.js"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3715e2b643.js" crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 
-<body class="full-page">
+<body>
   <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="">GN</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,22 +45,22 @@
     </div>
   </nav>
 
-  <section class="profile" id="white-profile">
-    <div>
-      <img src="images/GaryPicture.png" alt="Gary img">
-      <h2>Hello!</h2>
-      <p class="hello-description">It all started with my first program, appropriately named "Hello World" in my first semester of college where I knew this is what I wanted to do. I am now an aspiring Web Developer and currently a QA Engineer. More
-        updates soon to come! </p>
+  <section class="profile full-page" id="white-profile">
+    <div class"intro">
+      <h2>Gary Nunez</h2>
+      <img class="profile-picture" src="images/GaryPicture.png" alt="Gary img">
+      <h2>Web Developer</h2>
+      <p class="hello-description">Looking to build your next site!</p>
     </div>
   </section>
 
   <section id="black-skills">
     <div>
-      <h2 id="skills">My Skills.</h2>
+      <h2 id="skills">My Skills</h2>
       <div class="skill-row">
         <img class="programming" src="images/coding.png" alt="programming img">
         <h3>Programming!</h3>
-        <p class="programing-description">Since graduating college in 2017, I have been working towrds following my dream of becoming a programmer. With my BS in computer science in hand, I have been hard at work trying to find my place. I really
+        <p class="programing-description">Since graduating from CSULB in 2017, I have been working towrds following my dream of becoming a programmer. With my BS in computer science in hand, I have been hard at work trying to find my place. I really
           enjoy web development and hope to build some pretty beautiful sites in the future. Starting with this one!</p>
       </div>
       <div class="skill-row">
@@ -71,11 +72,16 @@
   </section>
 
   <section id="white-projects">
-    <div>
-      <h1>Coming Soon!</h1>
-      <img src="images/GaryPicture.png" alt="Gary img">
-      <h2>Hello!</h2>
-      <p class="hello-description">Please enjoy this image of me in the meantime!</p>
+    <div class="row">
+      <h2>Projects</h2>
+      <p class="works-box">Here you will find any projects I have previously worked on. More projects will be added in the future.</p>
+      <div class="col-md-12">
+        <a href="javascripthomework/furniture.html"><img class="furnsite-image" src="images/MetalFurniture.png" alt="MetalFurniture img"></a>
+        <div class="works-box">
+          <h4>GMoney Metal Furniture</h4>
+          <p>The Epitome of furnishings for any metalhead! (Please note this was done as class assignment while I was in school.)</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -84,13 +90,12 @@
       <h2>Get In Touch</h2>
       <h3>if you're interested in building a website</h3>
       <p>Smash that contact button!</p>
-      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      <button type="button" class="btn btn-light btn-lg contact-button"><a class="btn" href="mailto:name@email.com">Contact Me</a></button>
+
     </div>
     <div class="footer">
       <span>
-        <a class="footer-link" href="https://www.linkedin.com/in/gary4279/">LinkedIn</a>
-        <a class="footer-link" href="https://www.linkedin.com/in/gary4279/">Twitter</a>
-        <a class="footer-link" href="https://www.linkedin.com/in/gary4279/">Facebook</a>
+        <p>Lets connect on <a class="footer-link" href="https://www.linkedin.com/in/gary4279/">LinkedIn</a>!</p>
 
       </span>
       <p class="copyright">© Gary Nunez.</p>

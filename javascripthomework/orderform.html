@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="furniture.css">
+		<title>Order</title>
+		<script type="text/javascript" src="furn.js"></script>
+	</head>
+	<body>
+		<section>
+		<figure class = "head"><img src="furnImages/garyfurn.jpg" alt="Gary's Metal Furniture"></figure>
+		<nav>
+			<a href="furniture.html">Metal Store</a>
+			<a href="stoneFurniture.html">Rock Store</a>
+  		</nav>
+		<br>
+		<h3>Welcome</h3><br/>
+		<table class = "table" id = specials>
+			<tr>
+				<th>
+					<p>Metal Top Table</p>
+					<p>Was <del>$400</del> Now $200</p>
+				</th>
+				<th>
+					<p>Volcanic Rock Chair</p>
+					<p>Was <del>$250</del> Now $150</p>
+				</th>
+			</tr>
+			<tr>
+				<td><figure><img src="furnImages/MetalTable1.jpg" alt="A Table"></figure></td>
+				<td><figure><img src="furnImages/RockChair2.jpg" alt="Volcanic Rock Chair"></figure></td>
+			</tr>
+		</table>
+		</section>
+		<br>
+		<button type="button" onclick="showSpecials();">Hide/Show Specials</button>
+		<br>
+		<form id = "mainForm" action = "http://webdevbasics.net/scripts/demo.php" method = "post">
+			<fieldset>
+				<legend>Piece of furniture:</legend>
+				<select size = "4" id = item>
+					<option value = "100" selected>Tube Chair ($100)<br>
+					<option value = "200">Metal Master Chair ($200)<br>
+					<option value = "150">Rock Chair ($150)<br>
+					<option value = "150">Volcanic Rock Chair ($150)<br>
+					<option value = "150">Steel Couch ($150)<br>
+					<option value = "350">Metal Sofa ($350)<br>
+					<option value = "300">Rock Couch Set ($300)<br>
+					<option value = "500">Rock Sofa ($500)<br>
+					<option value = "200">Metal Top Table ($200)<br>
+					<option value = "400">Thrash Metal Table ($400)<br>
+					<option value = "350">Stone Patio Table ($350)<br>
+					<option value = "400">Black Rock Table ($400)<br>
+					<option value = "200">The Metal Bed ($200)<br>
+					<option value = "500">Metal Comfort ($500)<br>
+					<option value = "500">Stone Cold Dreamer ($500)<br>
+					<option value = "600">Rocky Dreams ($600)<br>
+				</select>
+			</fieldset>
+			<br>
+			<section>
+				<h3>Enter Personal Info: </h3><br>
+				<label>First Name:</label><br/>
+				<input type="text" name="firstname" size="30" required><br>
+				<br>
+				<label>Last Name:</label><br/>
+				<input type="text" name="lastname" size="30" required><br>
+				<br>
+				<label>Email:</label><br>
+				<input type="email" name="email" size="30" required><br>
+				<br>
+			</section>
+			<br>
+			<fieldset>
+				<legend>Delivery Option:</legend>
+				<h3>Choose Option:</h3><br>
+				<input type = "radio" name = "deliveryOption" value = "delivery" checked onchange = "deliveryFun('deliveryInfo');">Delivery<br>
+				<input type = "radio" name = "deliveryOption" value = "pickup" onchange = "pickUpFun('deliveryInfo');" onclick = "hideShipping();">Pick Up<br>
+			</fieldset>
+			<br>
+			<section id = "deliveryInfo">
+				<label>Address:</label><br/>
+				<h3>Enter Shipping Address: </h3><br>
+				<input type="text" name="address" size="30"><br>
+				<br>
+				<label>City:</label><br/>
+				<input type="text" name="city" size="30"><br>
+				<br>
+				<label>State:</label><br/>
+				<input type="text" name="state" size="30"><br>
+				<br>
+				<label>Zip Code:</label><br/>
+				<input type="text" name="zip" size="30" id = "zip" value = "90255"><br>
+				<br>
+			</section>
+			<br>
+			<fieldset>
+				<legend>Agree to Terms:</legend>
+				<input type = "checkbox" name = "agree" value = "1" required>By checking this box you agree to our privacy terms in which we can use the information you provided us to contact you for purchase updates. We will not share you information with other organizations unless we are asked to the customer who provided the information. Please check the box to continue with your purchase.<br>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Purchase Total</legend>
+				<p>Item Price:</p>
+				<p id = "itemPrice">$</p>
+				<p>Shipping Cost:</p>
+				<p id = "shippingCost">$</p>
+				<p>Total:</p>
+				<p id = "total">$</p>
+				<button type="button" onclick="totalPrice();">Calculate Total</button>
+			</fieldset>
+			<br>
+			<section class = "bttn">
+				<h3>Submit:</h3><br/>
+				<input id="order" type="submit" value="Order">
+				<input id="reset" type="reset" value="reset">
+			</section>
+		</form>
+		<footer>
+  			<p>Contact information:</p>
+  			<ul>
+  				<li>Name: Gary Nunez</li>
+  			</ul>
+  			Latest Update <!--#echo var="LAST_MODIFIED"-->
+		</footer>
+	</body>
+</html>
